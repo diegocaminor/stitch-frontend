@@ -1,25 +1,19 @@
-import logo from "assets/logo.svg";
+import LandingPage from "app/containers/LandingPage";
+
 import "../App.css";
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import PageNotFound from "app/containers/PageNotFound";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. lalalala @@ diego
-          camino
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React oh yeah!!
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/test" element={<LandingPage />} />
+        <Route path="/test" element={<LandingPage />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </div>
   );
 }
