@@ -8,29 +8,21 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    borderRadius: {
-      "ballon-rectangle": "7.2px",
-      "ballon-ovoid": "50%",
-    },
-    fontSize: {
-      "ballon-rectangle": "57.5px",
-      "ballon-ovoid": "57.5px",
-    },
-    lineHeight: {
-      12: "3.5rem",
-      ballon: "91px",
-    },
     colors: {
-      blue: "#1d4ed8",
-      purple: "#7e5bef",
+      black: "#000",
+      white: "#fff",
+      green: "#61F2E2",
+      purple: "#8B7FD8",
+      gray: "#1F1E1E",
+      transparent: "transparent",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
-    extend: {
-      "32rem": "32rem",
-    },
+    // extend: {
+    //   "32rem": "32rem",
+    // },
   },
   plugins: [],
 };

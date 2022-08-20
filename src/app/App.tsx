@@ -1,9 +1,8 @@
-import LandingPage from "app/containers/LandingPage";
-
 import "../App.css";
+import LandingPage from "app/containers/LandingPage";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import PageNotFound from "app/containers/PageNotFound";
+// import PageNotFound from "app/containers/PageNotFound";
 
 function App() {
   return (
@@ -11,8 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/test" element={<LandingPage />} />
-        <Route path="/test" element={<LandingPage />} />
-        <Route path="*" element={<PageNotFound />} />
+        {/* <Route path="*" element={<PageNotFound />} /> */}
       </Routes>
     </div>
   );
