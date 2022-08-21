@@ -8,6 +8,7 @@ const connector = new InjectedConnector({
 });
 
 const getLibrary = (provider) => {
+    console.log("aqui")
     return new Web3(provider);
 };
 

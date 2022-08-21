@@ -4,6 +4,8 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./containers/Home";
 
+window.Buffer = window.Buffer || require("buffer").Buffer;
+
 function App() {
   return (
     <div className="App">

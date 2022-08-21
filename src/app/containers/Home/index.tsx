@@ -8,6 +8,61 @@ import categories from "../../../__mocks__/categories";
 import channels from "../../../__mocks__/channels";
 
 const Home = () => {
+
+  /*let subscribeToEvents = () => {
+    const { connector } = this.state;
+
+    if (!connector) {
+      return;
+    }
+
+    connector.on("session_update", async (error, payload) => {
+      console.log(`connector.on("session_update")`);
+
+      if (error) {
+        throw error;
+      }
+
+      const { chainId, accounts } = payload.params[0];
+      this.onSessionUpdate(accounts, chainId);
+    });
+
+    connector.on("connect", (error, payload) => {
+      console.log(`connector.on("connect")`);
+
+      if (error) {
+        throw error;
+      }
+
+      this.onConnect(payload);
+    });
+
+    connector.on("disconnect", (error, payload) => {
+      console.log(`connector.on("disconnect")`);
+
+      if (error) {
+        throw error;
+      }
+
+      this.onDisconnect();
+    });
+
+    if (connector.connected) {
+      const { chainId, accounts } = connector;
+      const address = accounts[0];
+      this.setState({
+        connected: true,
+        chainId,
+        accounts,
+        address,
+      });
+      this.onSessionUpdate(accounts, chainId);
+    }
+
+    this.setState({ connector });
+  };*/
+
+
   return (
     <React.Fragment>
       <Section
