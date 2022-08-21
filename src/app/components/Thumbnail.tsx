@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Thumbnail {
   thumbnailImage?: string;
@@ -13,12 +14,16 @@ interface Props {
 }
 
 const ThumbnailComponent = ({ thumbnails }: Props) => {
+  const navigate = useNavigate();
   const elements: JSX.Element[] = [];
 
-  thumbnails.forEach((thumbnail) => {
+  thumbnails.forEach((thumbnail, index) => {
     elements.push(
-      <section className="px-3">
-        <figure className="bg-gray leading-5 mt-8 pb-2 rounded-lg w-64">
+      <section key={index} className="px-3">
+        <figure
+          className="bg-gray leading-5 mt-8 pb-2 rounded-lg w-64 cursor-pointer"
+          onClick={() => navigate("/player")}
+        >
           {/* <div className="absolute top-48 left-1/5 ml-5 mx-auto">
             <p className="text-white bg-red rounded px-3 uppercase">Live</p>
           </div> */}

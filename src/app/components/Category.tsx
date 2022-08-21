@@ -13,9 +13,9 @@ interface Props {
 const ThumbnailComponent = ({ categories }: Props) => {
   const elements: JSX.Element[] = [];
 
-  categories.forEach((category) => {
+  categories.forEach((category, index) => {
     elements.push(
-      <section className="px-3">
+      <section key={index} className="px-3">
         <figure className="bg-gray leading-5 mt-8 pb-2 rounded-lg w-32">
           {/* <div className="absolute top-48 left-1/5 ml-5 mx-auto">
             <p className="text-white bg-red rounded px-3 uppercase">Live</p>

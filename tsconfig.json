@@ -22,7 +22,8 @@
     "**/*.tsx",
     "src",
     "tailwind.config.js",
-    "src/custom.d.ts"
+    "src/custom.d.ts",
+    "src/custom-video.d.ts"
   ],
   "exclude": ["node_modules"]
 }
