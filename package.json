@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@ethersproject/bignumber": "^5.6.0",
+    "@ethersproject/experimental": "^5.6.0",
+    "@ethersproject/providers": "^5.6.8",
+    "@ethersproject/units": "^5.6.0",
+    "@headlessui/react": "^1.6.6",
+    "@heroicons/react": "^1.0.6",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -10,11 +17,24 @@
     "@types/node": "^18.7.8",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@web3-react/coinbase-wallet": "^8.0.34-beta.0",
+    "@web3-react/core": "8.0.33-beta.0",
+    "@web3-react/eip1193": "8.0.25-beta.0",
+    "@web3-react/empty": "8.0.19-beta.0",
+    "@web3-react/gnosis-safe": "^8.0.0-beta.0",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/metamask": "8.0.26-beta.0",
+    "@web3-react/network": "8.0.26-beta.0",
+    "@web3-react/types": "8.0.19-beta.0",
+    "@web3-react/url": "8.0.24-beta.0",
+    "@web3-react/walletconnect": "8.0.34-beta.0",
+    "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-player": "^2.10.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "recoil": "^0.7.5",
     "typescript": "^4.7.4",
     "video.js": "^7.20.2",
     "web-vitals": "^2.1.4"
@@ -45,6 +65,7 @@
   },
   "devDependencies": {
     "@types/video.js": "^7.3.45",
+    "buffer": "^6.0.3",
     "tailwindcss": "^3.1.8"
   }
 }

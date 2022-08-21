@@ -3,6 +3,7 @@ import React from "react";
 import Button from "./Button";
 import { useLocation, useNavigate } from "react-router-dom";
 import magnifyingGlass from "assets/magnifyingGlass.svg";
+import WalletMenu from "app/components/WalletMenu";
 
 interface INavbar {
   children: JSX.Element;
@@ -38,12 +39,7 @@ const Navbar = ({ children }: INavbar) => {
               className="py-2 mr-1"
               alt="magnifying-glass"
             />
-            <Button
-              text="Connect Wallet"
-              containerClassName=""
-              className="w-full text-white rounded-full button bg-gradient-radial from-green via-purple to-purple text-sm"
-              onClick={() => navigate("/home")}
-            ></Button>
+            <WalletMenu />
           </div>
         </div>
         {children}
