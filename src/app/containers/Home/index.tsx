@@ -1,7 +1,8 @@
 import Caption from "app/components/Caption";
 import Section from "app/components/Section";
-import Thumbnail from "app/components/Thumbnail";
+import ThumbnailComponent from "app/components/Thumbnail";
 import React from "react";
+import thumbnails from "../../../__mocks__/thumbnails";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
             colorWord="Trends"
             className="title text-white text-left"
           ></Caption>
-          <Thumbnail></Thumbnail>
+          <ThumbnailComponent thumbnails={thumbnails}></ThumbnailComponent>
         </React.Fragment>
       </Section>
     </React.Fragment>
