@@ -9,6 +9,7 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
+      blue: "blue",
       black: "#000",
       white: "#fff",
       green: "#61F2E2",
@@ -19,6 +20,11 @@ module.exports = {
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
+    },
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
     // extend: {
     //   "32rem": "32rem",

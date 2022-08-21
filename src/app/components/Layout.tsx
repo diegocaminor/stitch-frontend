@@ -8,7 +8,7 @@ interface ILayout {
 const Layout = ({ children }: ILayout) => {
   return (
     <React.Fragment>
-      <div className="px-7 py-7 md:py-9 bg-black">
+      <div className="">
         <Navbar>{children}</Navbar>
       </div>
     </React.Fragment>

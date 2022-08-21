@@ -1,4 +1,5 @@
 import stitchLogo from "assets/stitchLogo.svg";
+import React from "react";
 import Button from "./Button";
 
 interface INavbar {
@@ -7,15 +8,17 @@ interface INavbar {
 
 const Navbar = ({ children }: INavbar) => {
   return (
-    <div className="bg-black h-8 grid gap-4 grid-cols-2">
-      <img src={stitchLogo} className="py-2" alt="logo" />
-      <Button
-        text="Explore app"
-        containerClassName="ml-auto"
-        className="bg-white rounded-full button bg-gradient-to-r from-purple to-green text-sm "
-      ></Button>
+    <React.Fragment>
+      <div className="bg-black h-8 grid gap-4 grid-cols-2 p-7">
+        <img src={stitchLogo} className="py-2" alt="logo" />
+        <Button
+          text="Explore app"
+          containerClassName="ml-auto"
+          className="w-full text-white rounded-full button bg-gradient-radial from-green via-purple to-purple text-sm"
+        ></Button>
+      </div>
       {children}
-    </div>
+    </React.Fragment>
   );
 };
 export default Navbar;
