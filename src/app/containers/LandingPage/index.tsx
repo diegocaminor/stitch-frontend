@@ -1,7 +1,6 @@
 import Section from "app/components/Section";
 import Title from "app/components/Title";
 import React from "react";
-import "app/containers/LandingPage/index.css";
 import Description from "app/components/Description";
 import Button from "app/components/Button";
 import Feature from "app/components/Feature";

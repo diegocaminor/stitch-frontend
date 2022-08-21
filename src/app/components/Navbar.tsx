@@ -9,7 +9,7 @@ interface INavbar {
 const Navbar = ({ children }: INavbar) => {
   return (
     <React.Fragment>
-      <div className="bg-black h-8 grid gap-4 grid-cols-2 p-7">
+      <div className="bg-black h-8 grid gap-4 grid-cols-2 p-7 w-full md:w-4/5 md:mx-auto">
         <img src={stitchLogo} className="py-2" alt="logo" />
         <Button
           text="Explore app"
