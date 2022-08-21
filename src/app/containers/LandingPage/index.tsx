@@ -7,8 +7,12 @@ import Feature from "app/components/Feature";
 import clockSvg from "assets/features-logo/clock.svg";
 import mobileSvg from "assets/features-logo/mobile.svg";
 import moneySvg from "assets/features-logo/money.svg";
+import Caption from "app/components/Caption";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   return (
     <React.Fragment>
       <Section
@@ -18,7 +22,7 @@ const LandingPage = () => {
         <React.Fragment>
           <Title
             text="A new Power Stream for Fans"
-            className="title text-white text-left text-transparent bg-clip-text bg-gradient-to-r from-purple to-green"
+            className="title text-left text-transparent bg-clip-text bg-gradient-to-r from-purple to-green"
           ></Title>
           <Description
             text="Descentralized streaming platform that repays your fan attention with real value."
@@ -29,6 +33,7 @@ const LandingPage = () => {
               text="Go to app"
               containerClassName=""
               className="text-white button bg-gradient-radial from-green via-purple to-purple text-sm rounded-full rounded-br-2xl"
+              onClick={() => navigate("/home")}
             ></Button>
             <span className="text-white inline-block align-middle">
               Read the litepaper
@@ -41,10 +46,11 @@ const LandingPage = () => {
         className="flex flex-col container-section w-full md:w-3/5 xl:w-2/5 mx-auto"
       >
         <React.Fragment>
-          <Title
-            text="Explore the awesome benefits"
+          <Caption
+            text="Explore the awesome"
+            colorWord="Benefits"
             className="title text-white text-left"
-          ></Title>
+          ></Caption>
           <Feature
             title="Monetize your time"
             description="Retribution for the spent time"

@@ -15,6 +15,8 @@ module.exports = {
       green: "#61F2E2",
       purple: "#8B7FD8",
       gray: "#1F1E1E",
+      "gray-lighter": "#D2D3D3",
+      red: "#C50D02",
       transparent: "transparent",
     },
     fontFamily: {
@@ -30,5 +32,5 @@ module.exports = {
     //   "32rem": "32rem",
     // },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
