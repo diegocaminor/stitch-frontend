@@ -8,6 +8,7 @@ import heartIcon from "assets/icons/heart-icon.svg";
 import Caption from "app/components/Caption";
 import Section from "app/components/Section";
 import Button from "app/components/Button";
+import getEarnings from "app/constants/queries";
 
 const Player = () => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -18,6 +19,9 @@ const Player = () => {
       setSelectedTab(tab);
     }
   };
+
+  let totalEarning: number = 0.2;
+  let totalEarnings = getEarnings();
 
   return (
     <div className="player-wrapper'">
@@ -47,6 +51,10 @@ const Player = () => {
               </h3>
               <span className="text-gray-lighter text-sm">Ibai</span>
               <span className="text-gray-lighter text-sm">Axie Infinity</span>
+              <span className="text-gray-lighter text-sm">
+                <strong>Total Earnings: </strong>
+                {totalEarning} Matic
+              </span>
             </div>
           </div>
         </figure>
