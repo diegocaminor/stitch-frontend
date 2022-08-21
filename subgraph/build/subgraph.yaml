@@ -1,0 +1,33 @@
+specVersion: 0.0.4
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Stitch
+    network: mumbai
+    source:
+      address: "0x57880D5B70890446eac85C4d852AA585b67B7134"
+      abi: Stitch
+      startBlock: 27712164
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - DonateStreamer
+        - NewStreamer
+        - RunLottery
+        - WithdrawEarnings
+      abis:
+        - name: Stitch
+          file: Stitch/abis/Stitch.json
+      eventHandlers:
+        - event: DonateStreamer(indexed address,uint256)
+          handler: handleDonateStreamer
+        - event: NewStreamer(indexed address)
+          handler: handleNewStreamer
+        - event: RunLottery(indexed address,indexed address)
+          handler: handleRunLottery
+        - event: WithdrawEarnings(indexed address)
+          handler: handleWithdrawEarnings
+      file: Stitch/Stitch.wasm

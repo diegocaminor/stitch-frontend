@@ -1,0 +1,26 @@
+type DonateStreamer @entity {
+  id: ID!
+  streamer: Bytes! # address
+  amount: BigInt! # uint256
+}
+
+type NewStreamer @entity {
+  id: ID!
+  streamer: Bytes! # address
+}
+
+type RunLottery @entity {
+  id: ID!
+  streamer: Bytes! # address
+  winner: Bytes! # address
+}
+
+type WithdrawEarnings @entity {
+  id: ID!
+  streamer: Bytes! # address
+}
+
+type Streamer @entity {
+  id: ID!
+  earnings: BigInt! # uint256
+}
